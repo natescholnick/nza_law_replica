@@ -10,13 +10,18 @@ a {
 }
 
 a:hover {
-  color: maroon;
+  color: #91342f;
+  text-decoration: none;
 }
 
 .red_card a:hover {
   color: white;
   font-weight: bold;
   text-decoration: none;
+}
+
+#card_image_link {
+  margin-bottom: -15px;
 }
 
 #card_image_link:hover {
@@ -29,27 +34,37 @@ a:hover {
   color: black;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding: 0;
   font-size: 90%;
-}
-.navbar li {
-  border-right: .5px solid lightgrey;
-  padding: 0 40px;
+  height: 35px;
 }
 
-.navbar .last-nav-item {
-  border-right: none;
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 25px;
+}
+
+.vert_spacer {
+  color: lightgrey;
+  padding-top: 7px;
+  font-size: 110%;
 }
 
 .background_card {
   box-shadow: 0 0 12px 4px #888;
-  padding: 0px 60px 60px 60px;
-  margin: 0px 50px
+  padding: 0px 60px;
+  margin: 0px 50px;
 }
 
 #logo {
   margin: 40px 56px 30px 20px;
+}
+
+#logo:hover {
+  filter: brightness(105%);
 }
 
 .card {
@@ -59,13 +74,16 @@ a:hover {
 
 .red_card {
   background-image: url("../images/red_card_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   font-size: 80%;
+  padding-bottom: 10px;
 }
 
 .red_card h4 {
   border-bottom: 1px solid white;
-  margin: 0 15px;
+  margin: 0 15px 5px 15px;
   padding: 15px 0 5px 0;
   font-size: 100%;
   font-weight: bold;
@@ -77,65 +95,172 @@ a:hover {
   padding: 5px 0 5px 0;
 }
 
-.red_card dh {
-  margin-left: 10px;
+.red_card dt {
+  margin: 15px 0 0 10px;
   padding-top: 10px 0;
+  font-weight: normal;
 }
 
-.red_card dt{
-  margin-left: 30px;
+.red_card dd {
+  margin: 0 0 0 30px;
   font-weight: normal;
-  padding-top: 5px;
 }
 
 .red_card img {
-  margin-left: 15px;
+  margin-left: 10px;
+  width: 85%;
+}
+
+.red_card p {
+  margin: 5px 8px 0px 8px;
+  font-size: 95%;
+  line-height: 13px;
+}
+
+#home_red_card {
+  width: 82%;
+  margin-left: 18%;
+}
+
+.main_text {
+  font-size: 83%;
 }
 
 .link_image {
   padding: 10px 0px;
-  width: 105%;
+  width: 100%  ;
 }
 
-.image_caption {
+.image_caption_title {
   padding: 0;
   font-weight: bold;
-  margin-bottom: -2px;
+}
+
+#image_caption {
+  margin-top: 2px;
+  line-height: 15px;
+}
+
+figure {
+  font-size: 95%;
 }
 
 figure p {
   margin-left: 15px;
 }
 
+.geo_header {
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom: 1px solid lightgrey;
+  margin: 50px 0 10px 0;
+  padding-bottom: 10px;
+}
+
 #usa_list {
   column-count: 3;
   list-style-type: none;
+  font-size: 12px;
+  line-height: 12px;
+  padding-left: 0px;
+}
+
+#international_list {
+  list-style-type: none;
+  font-size: 12px;
+  line-height: 12px;
+  padding-left: 0px;
 }
 
 .header_text {
   font-weight: bold;
   padding-top: 45px;
-  margin-bottom: 0;
+  margin-bottom: 5px;
+  font-size: 90%;
 }
 
-.red_card p {
-  margin: 15px;
+.home_summary {
+  font-size: 85%;
+}
+
+.home_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.index_contact {
+  margin: 80px 0 0 70px;
+}
+
+.address_header {
+  font-weight: bold;
 }
 
 .address_info {
-  margin: 0;
+  font-size: 70%;
+  margin-bottom: 0;
 }
 
+#address_email {
+  color: #91342f;
+  text-decoration: underline;
+}
 
+.grey_card {
+  background-color: #D7CEC5;
+  font-size: 80%;
+  padding-top: 10px;
+}
 
+.grey_card p {
+  margin: 5px 8px 0px 8px;
+  font-size: 95%;
+  line-height: 13px;
+}
 
+.grey_card img {
+  width: 85%;
+  margin: 0 0 0px 10px;
+}
 
+.grey_card a:hover {
+  color: #91342f;
+  text-decoration: none;
+}
+
+#final_column_figure {
+  margin: 15px 0 8px 0;
+}
+
+.contact_img {
+  margin-bottom: 25px;
+}
+
+.contact_line {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0px;
+}
+
+.contact_endline{
+  margin-bottom: 16px;
+}
+
+.contact_email {
+  color: black;
+  text-decoration: underline;
+}
+
+.whitespace {
+  min-height: 220px;
+}
 
 .footer-links {
-  font-size: 85%;
+  font-size: 70%;
   text-align: center;
   border-top: 1px solid black;
-  margin: 20px 0px 10px 0px;
+  margin: 40px 0px 15px 0px;
+  padding-top: 5px;
 }
 
 #emdash {
