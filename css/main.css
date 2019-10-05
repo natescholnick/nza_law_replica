@@ -122,6 +122,11 @@ a:hover {
   margin-left: 18%;
 }
 
+#home_red_card p {
+  line-height: 15px;
+  margin-bottom: 12px;
+}
+
 .main_text {
   font-size: 83%;
 }
