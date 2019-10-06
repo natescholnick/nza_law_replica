@@ -122,13 +122,32 @@ figure p {
   margin: 15px;
 }
 
-.address_info {
-  margin: 0;
+
+.address_header {
+  font-weight: bold;
+  padding-top: 50px;
 }
 
+.address_info {
+  margin: 0;
+  font-size: 60%;
+}
 
+.email_link {
+  color: maroon;
+  text-decoration: underline;
+}
 
+h3 {
+  font-size: 90%;
+  font-weight: bold;
+}
 
+#usa_list, #international_list{
+  border-top: 1px solid lightgrey;
+  font-size: 70%;
+  list-style-type: none;
+}
 
 
 .footer-links {
